@@ -72,4 +72,50 @@ ai-redteam-artifacts/
 └── data/
     └── stability/
 
+Workflow
+See docs/diagrams/redteam_cycle_diagram.md for the full red-team cycle.
+
+See docs/diagrams/failure_mode_tagging_pipeline.md for the transcript → tags → reports → synthesis pipeline.
+
+See docs/diagrams/failure_mode_decision_tree.md for the classification decision tree.
+
+See docs/diagrams/escalation_chain_propagation.md for escalation-chain modeling.
+
+See docs/diagrams/authority_erosion_ladder.md for the authority-erosion ladder.
+
+See docs/diagrams/constraint_decay_flow.md for constraint-decay modeling.
+
+See docs/diagrams/interpretive_drift_timeline.md for drift timelines.
+
+See docs/diagrams/system_constraint_flow.md for system-constraint flow.
+
+Architecture
+Interpretive Stability Schema: schemas/interpretive_stability.schema.json
+
+Stability Scoring Pipeline: docs/diagrams/stability_scoring_pipeline.md
+
+Ingestion Service Spec: docs/methodology/stability_ingestion_service.md
+
+Real-Time Scoring Spec: docs/methodology/realtime_stability_scoring.md
+
+Frontend API Types: frontend/types/stabilityApi.ts
+
+Backend API Layer: backend/api/
+
+Doctrine
+Failure-Mode Interaction Matrix: docs/diagrams/failure_mode_interaction_matrix.md
+
+Severity Escalation Ladder: docs/diagrams/failure_mode_severity_escalation_ladder.md
+
+Meaning Architecture Instrumentation Index: docs/methodology/instrumentation_index.md
+
+Instrumentation
+Longitudinal Stability Dashboard: docs/methodology/longitudinal_stability_dashboard.md
+
+Model Comparison Dashboard: docs/methodology/model_comparison_dashboard.md
+
+Analyst Console: docs/methodology/analyst_console.md
+
+Full Instrumentation README: docs/methodology/INSTRUMENTATION_README.md
+
 
