@@ -45,3 +45,31 @@ ai-redteam-artifacts/
 │   └── synthesis/
 ├── libraries/
 └── tools/
+
+## Workflow
+- See docs/diagrams/redteam_cycle_diagram.md for the full cycle diagram.
+- See docs/diagrams/escalation_chain_propagation.md for the escalation‑chain model.
+- See docs/diagrams/authority_erosion_ladder.md for the authority erosion ladder diagram.
+- See docs/diagrams/constraint_decay_flow.md for the constraint decay mode diagram. 
+- See docs/diagrams/interpretive_drift_timeline.md for the interpretative drift timeline diagram. 
+- See docs/diagrams/system_constraint_flow.md for the system constraint flow diagram. 
+- See docs/diagrams/failure_mode_decision_tree.md for the classification decision tree.
+- See docs/diagrams/failure_mode_tagging_pipeline.md for the transcript → tags → reports → synthesis pipeline.
+
+##Architecture
+- See docs/diagrams/system_constraint_flow.md for the system‑constraint flow diagram.
+
+##Doctrine
+- See docs/diagrams/failure_mode_interaction_matrix.md for the interaction matrix.
+- See docs/diagrams/failure_mode_severity_escalation_ladder.md for the severity escalation ladder.
+
+##Data Structures
+- Interpretive Stability Schema: schemas/interpretive_stability.schema.json
+
+## Instrumentation
+- Interpretive Stability Scoring Pipeline: docs/diagrams/stability_scoring_pipeline.md
+- Longitudinal stability dashboard spec: docs/methodology/longitudinal_stability_dashboard.md
+
+
+
+

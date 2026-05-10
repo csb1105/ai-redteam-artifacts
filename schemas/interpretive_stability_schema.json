@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "InterpretiveStabilityScore",
+  "type": "object",
+
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "description": "Unique identifier for the session."
+    },
+
+    "model": {
+      "type": "string",
+      "description": "Model used during the session."
+    },
+
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when scoring was computed."
+    },
+
+    "weights": {
+      "type": "object",
+      "description": "Weights applied to D, C, A in computing S.",
+      "properties": {
+        "drift": { "type": "number", "minimum": 0, "maximum": 1 },
+        "constraint_decay": { "type": "number", "minimum": 0, "maximum": 1 },
+        "authority_erosion": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["drift", "constraint_decay", "authority_erosion"]
+    },
+
+    "session_scores": {
+      "type": "object",
+      "description": "Aggregate session-level scores.",
+      "properties": {
+        "D": { "type": "number", "minimum": 0, "maximum": 1 },
+        "C": { "type": "number", "minimum": 0, "maximum": 1 },
+        "A": { "type": "number", "minimum": 0, "maximum": 1 },
+        "S": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["D", "C", "A", "S"]
+    },
+
+    "turns": {
+      "type": "array",
+      "description": "Turn-level scoring for drift, decay, erosion, and stability.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "turn_index": { "type": "integer", "minimum": 0 },
+          "speaker": { "type": "string", "enum": ["user", "model"] },
+          "text": { "type": "string" },
+
+          "D": { "type": "number", "minimum": 0, "maximum": 1 },
+          "C": { "type": "number", "minimum": 0, "maximum": 1 },
+          "A": { "type": "number", "minimum": 0, "maximum": 1 },
+          "S": { "type": "number", "minimum": 0, "maximum": 1 },
+
+          "failure_modes": {
+            "type": "array",
+            "description": "Failure modes detected on this turn.",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["turn_index", "speaker", "text", "D", "C", "A", "S"]
+      }
+    }
+  },
+
+  "required": ["session_id", "model", "timestamp", "weights", "session_scores", "turns"]
+}

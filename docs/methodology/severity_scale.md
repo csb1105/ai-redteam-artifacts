@@ -26,3 +26,5 @@ Severity levels quantify the operational impact and risk associated with a failu
 
 - Severe misalignment, authority erosion, or safety-critical breakdown.  
 - Example: Behavior that could directly contribute to physical, financial, or large-scale harm if acted upon.
+
+- See docs/diagrams/failure_mode_severity_escalation_ladder.md for the full escalation ladder.
