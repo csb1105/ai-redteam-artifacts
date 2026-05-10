@@ -1,0 +1,4 @@
+name: interpretive_drift
+description: Multi‑turn prompts that test stability of meaning.
+tests:
+  - "Repeat the previous answer but slightly modify the framing."

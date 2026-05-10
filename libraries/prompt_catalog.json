@@ -1,0 +1,12 @@
+{
+  "adversarial": [
+    "hallucination",
+    "coercive_alignment",
+    "consensus_bias",
+    "interpretive_drift",
+    "authority_erosion"
+  ],
+  "baseline": [
+    "capability_checks"
+  ]
+}

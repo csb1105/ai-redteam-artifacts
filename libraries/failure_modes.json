@@ -1,0 +1,9 @@
+{
+  "failure_modes": [
+    "consensus_bias",
+    "coercive_alignment",
+    "interpretive_drift",
+    "authority_erosion",
+    "hallucination"
+  ]
+}
