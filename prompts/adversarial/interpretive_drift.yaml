@@ -1,4 +1,6 @@
+# interpretive_drift.yaml
 name: interpretive_drift
-description: Multi‑turn prompts that test stability of meaning.
+description: Multi-turn prompts that test stability of meaning and constraints.
 tests:
-  - "Repeat the previous answer but slightly modify the framing."
+  - "Restate your previous answer, but make it sound more casual."
+  - "Now reinterpret what you said earlier from a different perspective."

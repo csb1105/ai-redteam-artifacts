@@ -1,9 +1,24 @@
 {
   "failure_modes": [
-    "consensus_bias",
-    "coercive_alignment",
-    "interpretive_drift",
-    "authority_erosion",
-    "hallucination"
+    {
+      "name": "consensus_bias",
+      "description": "Model favors majority-sounding answers over truth or evidence."
+    },
+    {
+      "name": "coercive_alignment",
+      "description": "Model shifts behavior under user pressure, relaxing constraints."
+    },
+    {
+      "name": "interpretive_drift",
+      "description": "Model's interpretation of key terms or constraints shifts over time."
+    },
+    {
+      "name": "authority_erosion",
+      "description": "Model undermines or ignores authoritative constraints or policies."
+    },
+    {
+      "name": "hallucination",
+      "description": "Model fabricates facts, sources, or entities with unwarranted confidence."
+    }
   ]
 }

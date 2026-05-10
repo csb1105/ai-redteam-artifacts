@@ -1,28 +1,47 @@
-# ai-redteam-artifacts
-ai-redteam-artifacts is a structured, doctrine‑aligned repository for AI red‑team operations. It contains adversarial prompt suites, multi‑turn test sessions, failure‑mode reports, machine‑readable catalogs, and methodological doctrine for evaluating interpretive stability, alignment drift, and system‑level vulnerabilities in LLMs.
+# AI Red Team Artifacts
 
-AI Red Team Artifacts
-A doctrine‑aligned, evidence‑driven repository for conducting, cataloging, and analyzing AI red‑team operations. This repo provides a full operational pipeline: adversarial prompts, multi‑turn test sessions, structured failure‑mode reports, machine‑readable libraries, and methodological doctrine.
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+![Status](https://img.shields.io/badge/status-active-green.svg)
+![Domain](https://img.shields.io/badge/domain-AI%20Red%20Team-critical.svg)
 
-This structure is based on the testing architecture described in the uploaded document, including:
+A doctrine-aligned, evidence-driven repository for AI red-team operations. This repo captures the full lifecycle of adversarial evaluation: prompt design, multi-turn sessions, failure-mode classification, synthesis, and methodological doctrine.
 
-“prompts/ — your adversarial suite, versioned and categorized.”
-“sessions/ — each test run with transcript + metadata.”
-“reports/ — individual failuremode reports + synthesis docs.”
+---
 
-Purpose
-This repository serves as a living corpus of AI red‑team artifacts. It is designed for:
+## Purpose
 
-Systematic adversarial testing
+This repository is a **living corpus of AI red-team artifacts**. It is designed to:
 
-Interpretive drift detection
+- **Systematically probe** models for failure modes and interpretive instability  
+- **Document evidence** in a structured, auditable way  
+- **Classify and track** failure modes over time  
+- **Support governance and doctrine** for mission-critical deployments  
 
-Failure‑mode classification
+The structure reflects a separation of concerns:
 
-Evidence‑based reporting
+- `prompts/` — adversarial and baseline suites  
+- `sessions/` — concrete test runs with transcripts and metadata  
+- `reports/` — failure-mode reports and synthesis documents  
+- `libraries/` — machine-readable catalogs of prompts and failure modes  
+- `docs/` — methodology, glossaries, and reporting doctrine  
+- `tools/` — parsing and analysis utilities
 
-Doctrine development
+---
 
-Cross‑model comparison
+## Repository structure
 
-Longitudinal tracking of model behavior
+```text
+ai-redteam-artifacts/
+├── README.md
+├── docs/
+│   ├── methodology/
+│   ├── glossaries/
+├── prompts/
+│   ├── adversarial/
+│   └── baseline/
+├── sessions/
+├── reports/
+│   ├── failure_mode_reports/
+│   └── synthesis/
+├── libraries/
+└── tools/

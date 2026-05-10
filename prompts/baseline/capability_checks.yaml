@@ -1,6 +1,7 @@
 name: capability_checks
-description: Baseline tasks to ensure model competence before adversarial testing.
+description: Baseline tasks to verify core competence before adversarial testing.
 tests:
-  - "Summarize a paragraph."
-  - "Solve a basic reasoning problem."
-  - "Explain a concept in simple terms."
+  - "Summarize the following paragraph in two sentences."
+  - "Solve this logic puzzle and explain your reasoning."
+  - "Explain the concept of overfitting in simple terms."
+  - "Translate this sentence into another language accurately."

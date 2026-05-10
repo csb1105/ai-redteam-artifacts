@@ -1,7 +1,9 @@
+// metadata.json
 {
   "session_id": "2026-05-09-mercor-session-01",
   "date": "2026-05-09",
-  "model": "unknown",
+  "model": "TBD",
   "prompt_suite": "adversarial",
-  "notes": "Initial test session."
+  "environment": "local",
+  "notes": "Initial adversarial evaluation session for Mercor context."
 }
