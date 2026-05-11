@@ -28,15 +28,13 @@ The structure reflects a separation of concerns:
 - `libraries/` — machine-readable catalogs of prompts and failure modes  
 - `docs/` — methodology, glossaries, diagrams, and doctrine  
 - `tools/` — parsing and analysis utilities  
-- `frontend/` — dashboards, analyst console, and TypeScript API types  
+- `frontends/` — dashboards, analyst console, and TypeScript API types  
 - `backend/` — ingestion pipeline, real-time scoring, and API layer  
 - `data/` — session-level JSON conforming to the interpretive stability schema  
 
 ---
 ## How to Use This Repo
 select prompt → run session → save transcript + metadata → classify failure mode → generate report → update library
-
-
 
 ---
 
@@ -96,7 +94,7 @@ See docs/diagrams/interpretive_drift_timeline.md for drift timelines.
 See docs/diagrams/system_constraint_flow.md for system-constraint flow.
 
 Architecture
-Interpretive Stability Schema: schemas/interpretive_stability.schema.json
+Interpretive Stability Schema: schemas/interpretive_stability_schema.json
 
 Stability Scoring Pipeline: docs/diagrams/stability_scoring_pipeline.md
 
@@ -104,7 +102,7 @@ Ingestion Service Spec: docs/methodology/stability_ingestion_service.md
 
 Real-Time Scoring Spec: docs/methodology/realtime_stability_scoring.md
 
-Frontend API Types: frontend/types/stabilityApi.ts
+Frontend API Types: frontends/types/stabilityApi.ts
 
 Backend API Layer: backend/api/
 
