@@ -127,9 +127,11 @@ Code
 4. Dashboards query aggregated metrics
 5. Analyst console enables human review
 6. Doctrine updated based on findings
+   
 This creates a closed-loop evaluation system.
 
 5. Development Workflow
+
 Backend
 
 Add ingestion logic → backend/ingestion/
