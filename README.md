@@ -33,6 +33,12 @@ The structure reflects a separation of concerns:
 - `data/` — session-level JSON conforming to the interpretive stability schema  
 
 ---
+## How to Use This Repo
+select prompt → run session → save transcript + metadata → classify failure mode → generate report → update library
+
+
+
+---
 
 ## Repository Structure
 
@@ -50,7 +56,7 @@ ai-redteam-artifacts/
 │   │   └── INSTRUMENTATION_README.md
 │   ├── glossaries/
 │   └── diagrams/
-├── frontend/
+├── frontends/
 │   ├── types/
 │   │   └── stabilityApi.ts
 │   ├── dashboards/
