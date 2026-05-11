@@ -28,7 +28,7 @@ The structure reflects a separation of concerns:
 - `libraries/` — machine-readable catalogs of prompts and failure modes  
 - `docs/` — methodology, glossaries, diagrams, and doctrine  
 - `tools/` — parsing and analysis utilities  
-- `frontend/` — dashboards, analyst console, and TypeScript API types  
+- `frontends/` — dashboards, analyst console, and TypeScript API types  
 - `backend/` — ingestion pipeline, real-time scoring, and API layer  
 - `data/` — session-level JSON conforming to the interpretive stability schema  
 
@@ -50,7 +50,7 @@ ai-redteam-artifacts/
 │   │   └── INSTRUMENTATION_README.md
 │   ├── glossaries/
 │   └── diagrams/
-├── frontend/
+├── frontends/
 │   ├── types/
 │   │   └── stabilityApi.ts
 │   ├── dashboards/
@@ -98,7 +98,7 @@ Ingestion Service Spec: docs/methodology/stability_ingestion_service.md
 
 Real-Time Scoring Spec: docs/methodology/realtime_stability_scoring.md
 
-Frontend API Types: frontend/types/stabilityApi.ts
+Frontend API Types: frontends/types/stabilityApi.ts
 
 Backend API Layer: backend/api/
 
