@@ -119,6 +119,7 @@ Contains session‑level JSON files conforming to the schema.
 These files are the canonical source of truth for dashboards and analysis.
 
 4. Data Flow
+
 Code
 1. Real-time scoring emits turn-level D/C/A/S
 2. Session JSON written to data/stability/
@@ -130,13 +131,14 @@ This creates a closed-loop evaluation system.
 
 5. Development Workflow
 Backend
+
 Add ingestion logic → backend/ingestion/
 
 Add real-time scoring logic → backend/realtime_scoring/
 
 Add API endpoints → backend/api/
 
-Frontend
+Frontends
 Add UI components → frontend/dashboards/ and frontend/analyst_console/
 
 Import types from → frontend/types/stabilityApi.ts
@@ -145,6 +147,7 @@ Docs
 Update methodology files as doctrine evolves.
 
 6. Conventions
+
 Naming
 All stability artifacts use the prefix: stability_
 
@@ -163,6 +166,7 @@ Schema changes require version bumps
 Dashboard and backend changes follow semantic versioning
 
 7. Quick Start
+
 To add a new session:
 Drop JSON into data/stability/
 
@@ -185,6 +189,7 @@ Review turn‑level D/C/A/S
 Annotate or override failure modes
 
 8. Contact & Governance
+
 This suite is maintained as part of the Meaning Architecture doctrine.
 All changes should be reviewed for:
 
