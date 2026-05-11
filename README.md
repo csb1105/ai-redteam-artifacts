@@ -76,6 +76,7 @@ Example: `D/C/A/S = 2/3/3/2` means moderate drift, significant constraint failur
 
 ## Repository Structure
 
+```text
 ai-redteam-artifacts/
 ├── README.md
 ├── docs/
@@ -114,8 +115,7 @@ ai-redteam-artifacts/
 │   └── interpretive_stability.schema.json
 └── data/
     └── stability/
-
-
+```
 Workflow
 See docs/diagrams/redteam_cycle_diagram.md for the full red-team cycle.
 
