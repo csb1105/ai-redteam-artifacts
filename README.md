@@ -33,6 +33,7 @@ The structure reflects a separation of concerns:
 - `data/` — session-level JSON conforming to the interpretive stability schema  
 
 ---
+
 ## How to Use This Repo
 select prompt → run session → save transcript + metadata → classify failure mode → generate report → update library
 
