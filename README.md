@@ -72,7 +72,7 @@ ai-redteam-artifacts/
 │   └── synthesis/
 ├── libraries/
 ├── schemas/
-│   └── interpretive_stability.schema.json
+│   └── interpretive_stability_schema.json
 └── data/
     └── stability/
 
