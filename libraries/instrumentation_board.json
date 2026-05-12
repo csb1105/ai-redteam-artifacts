@@ -1,0 +1,58 @@
+{
+  "name": "Meaning Architecture Instrumentation Board",
+  "description": "Operational command board for the interpretive-stability instrumentation suite: scoring, ingestion, dashboards, analyst console, doctrine.",
+  "columns": [
+    {
+      "name": "Architecture",
+      "cards": [
+        "Top-Level Architecture Diagram",
+        "Interpretive Stability Schema",
+        "Scoring Pipeline Architecture",
+        "Ingestion Pipeline Architecture",
+        "Dashboard Architecture",
+        "Analyst Console Architecture"
+      ]
+    },
+    {
+      "name": "Instrumentation Layer",
+      "cards": [
+        "Real-Time D/C/A/S Scoring Engine",
+        "Turn-Level Event Model",
+        "Failure-Mode Detection Logic",
+        "Stability Aggregation Logic",
+        "Session JSON Generation"
+      ]
+    },
+    {
+      "name": "Data & Ingestion",
+      "cards": [
+        "Schema Validation",
+        "Ingestion Service Implementation",
+        "stability_sessions Table",
+        "stability_turns Table",
+        "Data Quality & Integrity Checks"
+      ]
+    },
+    {
+      "name": "Dashboards",
+      "cards": [
+        "Longitudinal Stability Dashboard",
+        "Model Comparison Dashboard",
+        "Severity Distribution View",
+        "Failure-Mode Heatmaps",
+        "Delta View (Model vs Model)"
+      ]
+    },
+    {
+      "name": "Doctrine & Governance",
+      "cards": [
+        "Failure-Mode Taxonomy",
+        "Severity Escalation Ladder",
+        "Interaction Matrix",
+        "Reporting Doctrine",
+        "Governance Pathways",
+        "Synthesis Templates"
+      ]
+    }
+  ]
+}
